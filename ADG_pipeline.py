@@ -58,7 +58,7 @@ def upload_to_GBQ():
 def download_ADG_dump():   
     
     username = 'vikrant.ghadge'
-    password = 'ub-H!ohrv7'
+    
     url = 'https://awa.tgho.nl/data/download/person_id_doi/?filtered=true'
     #filename = os.path.basename(urlparse(url).path)
     r = requests.get(url,allow_redirects=True, auth=(username,password))
@@ -80,7 +80,6 @@ def download_ADG_dump():
 if __name__=="__main__":    
     
     username = 'vikrant.ghadge'
-    password = 'ub-H!ohrv7'
     url = 'https://awa.tgho.nl/data/current_version/'
     #filename = os.path.basename(urlparse(url).path)
     r = requests.get(url,allow_redirects=True, auth=(username,password))
